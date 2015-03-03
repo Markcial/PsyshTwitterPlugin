@@ -1,0 +1,29 @@
+{
+    "name": "markcial/psysh-twitter",
+    "description": "Twitter plugin for psysh, built as a example for the new plugin manager for psysh",
+    "require": {
+        "psy/psysh": "dev-plugin_manager",
+        "abraham/twitteroauth": "@stable"
+    },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url":  "git@github.com:Markcial/psysh.git"
+      }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    },
+    "autoload": {
+      "psr-4": {
+        "Oxpecker\\": "src/Oxpecker"
+      },
+      "files": ["src/register.php"]
+    },
+    "authors": [
+        {
+            "name": "Marc Garcia",
+            "email": "markcial@gmail.com"
+        }
+    ]
+}
